@@ -45,9 +45,10 @@ margin-top:0.0em;
   Research interests:
 </p>
 <ul>
-    <li><a href="#bioinformatics">Scientific Computing</a> </li>
-    <li><a href="#latent-variable">High-Performance Computing</a> </li>
-    <li><a href="#latent-variable">Scientific Machine Learning</a> </li>
+    <li><a href="#mathmodelling">Mathematical-Physical Modelling</a> </li>
+    <li><a href="#scientificcomputing">Scientific Computing</a> </li>
+    <li><a href="#hpc">High-Performance Computing</a> </li>
+    <li><a href="#sciml">Scientific Machine Learning</a> </li>
     <li><a href="#nlp">Natural language processing (NLP) for Human-Device interfaces enabling Virtual Assistants / Agents</a> </li>
   </ul>
 <p></p>
@@ -166,7 +167,29 @@ margin-top:0.0em;
 <table border="0" cellspacing="2" cellpadding="2"><tbody>
 
     <tr>
-    
+        <td valign="top">
+            <a href="https://arxiv.org/abs/2407.01088" target="_blank">
+                    <!-- <img src="assets/beyond_pixels.png" alt="Link" width="130px"> -->
+                    <img src="assets/PIHNNLinearElasticity.png" alt="Link" width="180px">
+                  </a>
+        </td>
+        <td valign="top">
+            <b>Physics-Informed Holomorphic Neural Networks (PIHNNs): Solving Linear Elasticity Problems</b>
+            <p>
+                We propose physics-informed holomorphic neural networks (PIHNNs) as a method to solve boundary value problems where the solution can be represented via holomorphic functions. Specifically, we consider the case of plane linear elasticity and, by leveraging the Kolosov-Muskhelishvili representation of the solution in terms of holomorphic potentials, we train a complex-valued neural network to fulfill stress and displacement boundary conditions while automatically satisfying the governing equations. This is achieved by designing the network to return only approximations that inherently satisfy the Cauchy-Riemann conditions through specific choices of layers and activation functions. To ensure generality, we provide a universal approximation theorem guaranteeing that, under basic assumptions, the proposed holomorphic neural networks can approximate any holomorphic function. Furthermore, we suggest a new tailored weight initialization technique to mitigate the issue of vanishing/exploding gradients. Compared to the standard PINN approach, noteworthy benefits of the proposed method for the linear elasticity problem include a more efficient training, as evaluations are needed solely on the boundary of the domain, lower memory requirements, due to the reduced number of training points, and C∞ regularity of the learned solution. Several benchmark examples are used to verify the correctness of the obtained PIHNN approximations, the substantial benefits over traditional PINNs, and the possibility to deal with non-trivial, multiply-connected geometries via a domain-decomposition strategy.                    
+          </p>
+        <a href="" target="_blank">Matteo Calafa</a>,
+        <a href="" target="_blank">Emil Hovad</a>,
+        <a href="" target="_blank">Allan P. Engsig-Karup</a>,
+        <a href="" target="_blank">Tito Andriollo</a>
+        <br>
+            <em>Arxiv preprint</em>, 2024
+            <br>
+            <a href="https://arxiv.org/abs/2407.01088"  target="_blank">Link to paper</a>
+        </td>
+        </tr>
+
+    <tr>
         <td valign="top">
             <a href="https://openreview.net/forum?id=8SvMFLOXvf&referrer=%5Bthe%20profile%20of%20Freja%20Petersen%5D(%2Fprofile%3Fid%3D~Freja_Petersen1)" target="_blank">
                     <!-- <img src="assets/beyond_pixels.png" alt="Link" width="130px"> -->
@@ -188,33 +211,37 @@ margin-top:0.0em;
         </tr>
 
         <tr>
-    
             <td valign="top">
-                <a href="https://arxiv.org/abs/2407.01088" target="_blank">
+                <a href="https://sites.dundee.ac.uk/iwwwfb2024/wp-content/uploads/sites/197/2024/04/IWWWFB39_16.pdf" target="_blank">
                         <!-- <img src="assets/beyond_pixels.png" alt="Link" width="130px"> -->
-                        <img src="assets/PIHNNLinearElasticity.png" alt="Link" width="180px">
+                        <img src="assets/NavierStokesEquationsIWWWFB2024.png" alt="Link" width="180px">
                       </a>
             </td>
             <td valign="top">
-                <b>Physics-Informed Holomorphic Neural Networks (PIHNNs): Solving Linear Elasticity Problems</b>
+                <b>A High-Order Finite Difference Incompressible
+                    Navier-Stokes model for Water Waves and
+                    Wave-Structure Interaction</b>
                 <p>
-                    We propose physics-informed holomorphic neural networks (PIHNNs) as a method to solve boundary value problems where the solution can be represented via holomorphic functions. Specifically, we consider the case of plane linear elasticity and, by leveraging the Kolosov-Muskhelishvili representation of the solution in terms of holomorphic potentials, we train a complex-valued neural network to fulfill stress and displacement boundary conditions while automatically satisfying the governing equations. This is achieved by designing the network to return only approximations that inherently satisfy the Cauchy-Riemann conditions through specific choices of layers and activation functions. To ensure generality, we provide a universal approximation theorem guaranteeing that, under basic assumptions, the proposed holomorphic neural networks can approximate any holomorphic function. Furthermore, we suggest a new tailored weight initialization technique to mitigate the issue of vanishing/exploding gradients. Compared to the standard PINN approach, noteworthy benefits of the proposed method for the linear elasticity problem include a more efficient training, as evaluations are needed solely on the boundary of the domain, lower memory requirements, due to the reduced number of training points, and C∞ regularity of the learned solution. Several benchmark examples are used to verify the correctness of the obtained PIHNN approximations, the substantial benefits over traditional PINNs, and the possibility to deal with non-trivial, multiply-connected geometries via a domain-decomposition strategy.                    
+                    We propose a new high-order1 finite difference numerical model for the simulation
+                    of nonlinear water waves and wave-structure interaction with fixed structures using the
+                    Navier-Stokes equations. The complete formulation is described in three spatial dimensions (3D) and preliminary validation results are here presented for two spatial dimensions (2D). A spatially fixed computational domain is defined through introducing a
+                    σ-coordinate that transform the Navier–Stokes equations along the vertical dimension
+                    from the sea bed to the still water level. Numerical experiments highlights both the
+                    correctness of the solution, the high-order convergence property that is attractive for efficient solutions as well as the classical benchmark problem due to Beji & Battjes (1994)
+                    where experimental measurements are available and hence serve as validation of the new
+                    high-order numerical scheme.                    
               </p>
-            <a href="" target="_blank">Matteo Calafa</a>,
-            <a href="" target="_blank">Emil Hovad</a>,
             <a href="" target="_blank">Allan P. Engsig-Karup</a>,
-            <a href="" target="_blank">Tito Andriollo</a>
+            <a href="" target="_blank">Anders Melander</a>
             <br>
-                <em>Arxiv preprint</em>, 2024
+                <em>IWWWFB</em>, 2024
                 <br>
-                <a href="https://arxiv.org/abs/2407.01088"  target="_blank">Link to paper</a>
+                <a href="https://sites.dundee.ac.uk/iwwwfb2024/wp-content/uploads/sites/197/2024/04/IWWWFB39_16.pdf"  target="_blank">Link to paper</a>
             </td>
             </tr>
-    
-
+            
 
     <tr>
-    
         <td valign="top">
             <a href="https://www.pnas.org/doi/10.1073/pnas.2312159120" target="_blank">
                     <!-- <img src="assets/beyond_pixels.png" alt="Link" width="130px"> -->
