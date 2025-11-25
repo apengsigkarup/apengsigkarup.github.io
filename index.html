@@ -214,6 +214,27 @@ I am a co-founder of the GPULAB established at DTU Compute in 2008.
 Published collaborative research works are listed here. 
 <table border="0" cellspacing="2" cellpadding="2"><tbody>
 
+<tr>
+  <td valign="top">
+    <a href="https://arxiv.org/abs/2511.18071" target="_blank">
+      <img src="assets/SubspaceAccelerationWaterWaves.png" alt="Link" width="180px">
+    </a>
+  </td>
+  <td valign="top">
+    <b>Subspace Acceleration for Efficient Nonlinear Water Wave Simulation</b>
+    <p>
+Efficient simulation of nonlinear and dispersive free-surface flows governed by the incompressible Navier-Stokes equations remains a central challenge in ocean and coastal engineering. The computational bottleneck arises from solving a time-dependent discretized Poisson problem at every time step to enforce divergence free flow. This is crucial to ensure conservation of mass and requires solving long sequences of time-dependent linear systems typically using iterative methods, such as the preconditioned Krylov subspace methods. In this work, we investigate new subspace acceleration techniques for improving initial guesses to reduce the number of iterations required by iterative solvers, with a focus on nonlinear wave propagation problems. We extend the original subspace acceleration method by incorporating the complete history of previous solutions through an exponentially weighted formulation. This approach eliminates the need for repeated sketching and orthonormalization, resulting in a more efficient and scalable strategy to generate better initial guesses. Our method is implemented within a high-order finite-difference framework using a method-of-lines formulation and a low-storage Runge-Kutta time integration scheme. We demonstrate that subspace acceleration significantly reduces the number of GMRES iterations when solving the Poisson equation in nonlinear water wave simulations. Performance is evaluated on two benchmark problems: nonlinear stream function wave propagation and harmonic wave generation over a submerged bar. In both cases, the new approach achieves substantial improvements in computational efficiency without compromising accuracy. Although demonstrated using high-order finite difference methods, the technique is discretization independent and broadly applicable to incompressible free-surface flow solvers.
+    </p>
+    <a href="https://arxiv.org/search/?searchtype=author&query=S%C3%B8rensen%2C+Rasmus+Kleist+H%C3%B8rlyck">Rasmus Kleist Hørlyck Sørensen</a>,
+    <a href="https://arxiv.org/search/?searchtype=author&query=Guido%2C+Margherita">Margherita Guido</a>,
+    <a href="https://arxiv.org/search/?searchtype=author&query=Engsig-Karup%2C+Allan+Peter">Allan Peter Engsig-Karup</a>,
+    <a href="https://arxiv.org/search/?searchtype=author&query=Kressner%2C+Daniel">Daniel Kressner</a>
+    <br>
+    <em>arXiv:2511.18071 [physics.flu-dyn]</em>, submitted November 25, 2025. 
+    <br>
+    <a href="https://arxiv.org/abs/2511.18071" target="_blank">Link to paper</a>, <a href="podcasts/LLMNotebook_SubspaceAcceleration.m4a"><img src="assets/iconGoogleNOTEBOOK.svg">LLMNotebook podcast (English)</a>.
+  </td>
+</tr>
 
 <tr>
   <td valign="top">
