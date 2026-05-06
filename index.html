@@ -216,6 +216,26 @@ I am a co-founder of the GPULAB established at DTU Compute in 2008.
 Published collaborative research works are listed here. 
 <table border="0" cellspacing="2" cellpadding="2"><tbody>
 
+<tr>
+  <td valign="top">
+    <a href="https://arxiv.org/abs/2604.16895" target="_blank">
+      <!-- Replace with a representative figure if available -->
+      <img src="assets/PhysicsInformedTracking.png" alt="Link to paper" width="180px">
+    </a>
+  </td>
+  <td valign="top">
+    <b>Physics-Informed Tracking (PIT)</b>
+    <p>
+We propose Physics-Informed Tracking (PIT), a video-based framework for tracking a single particle from video, where a neural network autoencoder localizes a particle as a heatmap peak (landmark) and a differentiable physics module embedded in the autoencoder constrains several landmarks over time (a trajectory) to satisfy known dynamics. The novel Physics-Informed Landmark Loss (PILL) compares this predicted trajectory back against the landmarks, enforcing physical consistency without labels. Its supervised variant (PILLS) instead compares the prediction against ground-truth position, velocity, and bounce from simulation, enabling end-to-end backpropagation. To support supervised and unsupervised learning, we use an autoencoder with a split bottleneck that separates A) tracking-related structure via landmark heatmaps from B) background noise and subsequent image reconstruction. We evaluate a replicated 26 factorial design (n = 4 replicates, 64 configurations), showing that PILLS consistently achieves sub-pixel tracking accuracy for the bilinear and physics-refined decoder outputs under both clean and noisy conditions.      
+    </p>
+    <a href="https://arxiv.org/search/cs?searchtype=author&query=Hovad,+E" target="_blank">Emil Hovad</a>,
+    <a href="https://arxiv.org/search/?searchtype=author&query=Engsig-Karup%2C+Allan+P" target="_blank">Allan P. Engsig-Karup</a>,
+    <br>
+    <em>arXiv:2604.16895</em>, submitted Apr 18, 2026. 
+    <br>
+    <a href="https://arxiv.org/abs/2604.16895" target="_blank">Link to paper</a>.
+  </td>
+</tr>
 
 <tr>
   <td valign="top">
