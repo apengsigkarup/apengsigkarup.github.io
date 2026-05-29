@@ -224,6 +224,32 @@ Published collaborative research works are listed here.
 
 <tr>
   <td valign="top">
+    <a href="https://arxiv.org/abs/2605.29598" target="_blank">
+      <!-- Replace with a representative figure from the paper if available -->
+      <img src="assets/IMEXDG_AtmosphericDynamics.png" alt="Link to paper" width="180px">
+    </a>
+  </td>
+  <td valign="top">
+    <b>An IMEX-DG solver with non-conforming mesh refinement for atmospheric dynamics with rotation</b>
+    <p>
+We present a high-order implicit-explicit discontinuous Galerkin (IMEX-DG) solver for the compressible Euler equations to account for rotational effects within a fully compressible atmospheric framework. Time integration follows a second-order additive Runge-Kutta scheme, treating stiff acoustic modes implicitly and advective terms explicitly. The solver is built on the this http URL finite element library, combining matrix-free operator evaluation, adaptive non-conforming meshes capabilities, and distributed-memory parallelism.
+Two alternative treatments of the rotational and gravitational source terms within the solution strategy, based on nonlinear fixed-point iterations, are introduced and compared in terms of accuracy, robustness, and computational efficiency. A discrete analysis of the rotational operator is also carried out in order to derive a formulation suitable for efficient matrix-free implementation and to avoid inconsistent naive discretisations.
+The proposed formulation is validated through convergence studies on rotating inertia-gravity wave benchmarks and further assessed in fully three-dimensional simulations of stratified flow over orography on both uniform and adaptive meshes. The numerical results show that the rotating IMEX-DG framework has the expected accuracy and stability properties while correctly capturing the asymmetry and wave structures induced by rotation in large-scale atmospheric flows.
+    </p>
+    <a href="https://arxiv.org/search/?searchtype=author&query=Bottani%2C+Letizia" target="_blank">Letizia Bottani</a>,
+    <a href="https://arxiv.org/search/?searchtype=author&query=Benacchio%2C+Tommaso" target="_blank">Tommaso Benacchio</a>,
+    <a href="https://arxiv.org/search/?searchtype=author&query=Orlando%2C+Giuseppe" target="_blank">Giuseppe Orlando</a>,
+    <a href="https://arxiv.org/search/?searchtype=author&query=Bonaventura%2C+Luca" target="_blank">Luca Bonaventura</a>,
+    <a href="https://arxiv.org/search/?searchtype=author&query=Engsig-Karup%2C+Allan+Peter" target="_blank">Allan Peter Engsig-Karup</a>
+    <br>
+    <em>arXiv:2605.29598 [math.NA]</em>, submitted May 28, 2026.
+    <br>
+    <a href="https://arxiv.org/abs/2605.29598" target="_blank">Link to paper</a>.
+  </td>
+</tr>
+
+<tr>
+  <td valign="top">
     <a href="https://arxiv.org/abs/2605.13896" target="_blank">
       <!-- Replace with a representative figure or project image if available -->
       <img src="assets/APLtoCSharp_CodeTranslation.png" alt="Link to paper" width="180px">
